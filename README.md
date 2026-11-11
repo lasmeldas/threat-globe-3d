@@ -37,7 +37,7 @@
 - **Live HUD.** A running counter of blocked events, streams in flight, and a rolling feed of simulated events ("Mumbai → Nairobi · port scan").
 - **Interactive.** Drag to rotate with inertia and tilt, scroll to zoom in and out.
 - **Accessible.** A **Motion** button pauses the animation, `prefers-reduced-motion` starts it paused, controls have visible focus, and the page works without WebGL (it shows a message instead of breaking).
-- **Light.** About 10 KB of map data, no framework, no bundler, one CDN import.
+- **Light.** About 10 KB of map data, no framework, no bundler, and Three.js is included in the repo so there is no CDN to depend on.
 
 ## How it works
 
@@ -80,6 +80,7 @@ threat-globe-3d/
 ├── src/
 │   ├── main.js   # scene, arcs, interaction, HUD
 │   └── land.js   # compact land/ocean bitmask
+├── vendor/       # Three.js r160 (MIT)
 ├── docs/         # banner, preview image and animation
 ├── .nojekyll
 ├── LICENSE

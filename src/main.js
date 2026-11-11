@@ -1,6 +1,8 @@
 import * as THREE from 'three';
 import { LAND_W, LAND_H, LAND_B64 } from './land.js';
 
+document.documentElement.dataset.ready = '1'; // tells the page the 3D script loaded
+
 /* ---------- configuration ---------- */
 const R = 2; // globe radius
 const LOOP = 12; // seconds; every arc period divides this, so captures loop seamlessly
